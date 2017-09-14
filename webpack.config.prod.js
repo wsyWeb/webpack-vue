@@ -66,14 +66,16 @@ const config = {
     }
   },
   plugins: [
+    // extractLESS,
     new HtmlWebpackPlugin({
       template: __dirname + '/index.html'
     }),
     new webpack.DefinePlugin({ //根据设置的不同环境变量决定是否打包压缩，还是启动dev server 或者是 prod server
       'process.env': {
-        NODE_ENV: JSON.stringify('depoloyment')
+        NODE_ENV: JSON.stringify('production')
       }
     }),
+    new webpack.optimize.UglifyJsPlugin(),//压缩代码
     new ExtractTextPlugin('[name].css')
   ]
 };

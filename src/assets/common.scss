@@ -1,3 +1,201 @@
 body {
-	background: #ccc;
+	background:pink;
+}
+//这里放置工具样式
+.wb-conatiner {
+  margin: 20px;
+}
+
+.height-all {
+  height: 100%
+}
+.width-all {
+  width: 100%
+}
+.border-radius-4 {
+  border-radius: 4px
+}
+.mw100 {
+  min-width: 100px;
+}
+.cl {clear:both;}
+//padding
+.p0 { padding: 0 }
+.pl0 { padding-left: 0 }
+.pr0 { padding-right: 0 }
+.pt0 { padding-top: 0 }
+.pb0 { padding-bottom: 0 }
+//padding
+.p-xs {padding: 10px}
+.p-sm {padding: 15px}
+.p-md {padding: 20px;}
+.p-lg {padding: 30px;}
+//padding-left
+.pl-xs {padding-left: 10px}
+.pl-sm {padding-left: 15px}
+.pl-md {padding-left: 20px}
+.pl-lg {padding-left: 30px}
+.pl50 {padding-left: 50px}
+//padding-right
+.pr-xs {padding-right: 10px}
+.pr-sm {padding-right: 15px}
+.pr-md {padding-right: 20px}
+.pr-lg {padding-right: 30px}
+//padding-top
+.pt-ss {padding-top: 5px}
+.pt-xs {padding-top: 10px}
+.pt-sm {padding-top: 15px}
+.pt-md {padding-top: 20px}
+.pt-lg {padding-top: 30px}
+//padding-bottom
+.pb-ss {padding-bottom: 5px}
+.pb-xs {padding-bottom: 10px}
+.pb-sm {padding-bottom: 15px}
+.pb-md {padding-bottom: 20px}
+.pb-lg {padding-bottom: 30px}
+//margin
+.m0 { margin: 0 }
+.ml0 { margin-left: 0 }
+.mr0 { margin-right: 0 }
+.mt0 { margin-top: 0 }
+.mb0 { margin-bottom: 0 }
+//margin-left
+.ml-xs {margin-left: 10px}
+.ml-sm {margin-left: 15px}
+.ml-md {margin-left: 20px}
+.ml-lg {margin-left: 30px}
+//margin-right
+.mr-xs {margin-right: 10px}
+.mr-sm {margin-right: 15px}
+.mr-md {margin-right: 20px}
+.mr-lg {margin-right: 30px}
+.mr5 {margin-right:5px;}
+//margin-top
+.mt-xs {margin-top: 10px}
+.mt-sm {margin-top: 15px}
+.mt-md {margin-top: 20px}
+.mt-lg {margin-top: 30px}
+//margin-bottom
+.mb-xs {margin-bottom: 10px}
+.mb-sm {margin-bottom: 15px}
+.mb-md {margin-bottom: 20px}
+.mb-lg {margin-bottom: 30px}
+.mb5 {margin-bottom: 5px;}
+.mt5 {margin-top: 5px;}
+//border
+.b0 { border: 0 }
+.bl0 { border-left: 0 }
+.br0 { border-right: 0 }
+.bt0 { border-top: 0 }
+.bb0 { border-bottom: 0 }
+
+.bottom0 { bottom: 0 }
+
+.position-relative { position: relative }
+.position-absolute { position: absolute }
+.pct100 { width:100% }
+.pc80 { width: 80% }
+.pc50 { width: 50% }
+.pt4 { padding-top: 4px; }
+.ul-clear-style { list-style: none; padding-left: 0 }
+.a-clear-color, .a-clear-color:hover {
+  color: #545454;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ovh{overflow:hidden;}
+.ova{overflow:auto;}
+
+.di{display:inline;}
+.db{display:block;}
+.dib{display:inline-block;}
+.dn{display:none}
+
+
+.clear-border-bottom {
+  border-bottom: none !important;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+
+.format-ele-radio-font .el-radio__label {
+  font-size: 12px;
+  font-weight: normal;  
+}
+
+@keyframes rorate-ele {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}
+.rotate-ani {
+  animation: rorate-ele 1s infinite linear
+}
+
+.clearfix::before, .clearfix::after {
+  content: '';
+  display: table
+}
+.clearfix::after {
+  clear: both;
+}
+
+.sub-title {
+  color: #aaa;
+  font-size: 12px;
+}
+
+
+/**统一element的输入框和 bootstrap的输入框 PlainParamInput组件*/
+.wise-el-input-wrapper .el-input__inner, .wise-el-input-wrapper .el-input-group__append {
+  height: 31px;
+  font-size: 12px;
+  border-color: #ccc;
+  padding-right: 0;
+}
+.wise-el-input-wrapper .el-input-group__append {
+  padding: 0;
+  .second-append-common {
+    border-top-right-radius:3px; 
+    border-bottom-right-radius:3px ;
+    height: 100%; 
+    display:inline-block; 
+    border-left: 1px solid #ccc; 
+    line-height: 29px; 
+    padding: 0 6px;     
+  }
+  //输入参数的input样式
+  .input-para {
+    height: 100%; 
+    display: inline-block; 
+    line-height: 29px; 
+    padding: 0 10px
+  }
+  .input-unit {
+    @extend .second-append-common;
+    background-color:#eeeeee;
+    color:#555 ;
+  }
+  .input-para-second {
+    @extend .input-unit;
+    padding: 0 10px;
+    background:none;
+    color: #97a8be;
+  }
+}
+.wise-el-input-wrapper .el-input__icon+.el-input__inner {
+  padding-right:10px;
+}
+/**统一element 的边框 和当前wisecloud的边框 imageselect 组件*/
+.wise-el-input-group-wrapper .el-input-group__append{
+  border-color: #ccc;
+}
+
+
+
+.flex-1 {
+  flex:1
 }
